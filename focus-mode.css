@@ -1,7 +1,7 @@
-body > .scaffold > :is(top-nav, navigation-rail, side-nav, footer),
+body > .devsite-wrapper > :is(top-nav, navigation-rail, side-nav, devsite-header),
+body > .devsite-wrapper > :is(devsite-book-nav, .devsite-book-nav-bg, .devsite-book-nav-blur, .devsite-book-nav-toggle), 
 main > :not(:last-child),
-main > :last-child > navigation-tree,
-main .toc-container {
+main ~ :is(.devsite-footer) {
   display: none;
 }
 
