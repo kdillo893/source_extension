@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "Source Extension",
+  "description": "Basic extension, will become something to view article sources",
+  "version": "0.1", 
+  "permissions": ["activeTab", "scripting"],
+  "icons": {
+    "16": "images/src_16.png",
+    "32": "images/src_32.png",
+    "64": "images/src_64.png",
+    "128": "images/src_128.png"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_icon": {
+      "16": "images/src_16.png",
+      "32": "images/src_32.png",
+      "64": "images/src_64.png",
+      "128": "images/src_128.png"
+    }
+  }
+}
