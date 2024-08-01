@@ -20,5 +20,13 @@
       "64": "images/src_64.png",
       "128": "images/src_128.png"
     }
+  },
+  "commands": {
+    "_execute_action": {
+      "suggested_key": {
+        "default": "Ctrl+B",
+        "mac": "Command+B"
+      }
+    }
   }
 }
