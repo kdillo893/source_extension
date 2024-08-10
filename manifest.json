@@ -3,7 +3,10 @@
   "name": "Source Extension",
   "description": "Basic extension, will become something to view article sources",
   "version": "0.1", 
-  "permissions": ["activeTab", "scripting"],
+  "permissions": [
+    "activeTab",
+    "scripting"
+  ],
   "icons": {
     "16": "images/src_16.png",
     "32": "images/src_32.png",
@@ -19,7 +22,8 @@
       "32": "images/src_32.png",
       "64": "images/src_64.png",
       "128": "images/src_128.png"
-    }
+    },
+    "default_popup": "popup.html"
   },
   "commands": {
     "_execute_action": {
@@ -28,5 +32,12 @@
         "mac": "Command+B"
       }
     }
-  }
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://apnews.com/article/*"],
+      "css": ["css/apnews.css"],
+      "js": ["extract_links.js"] 
+    }
+  ]
 }
